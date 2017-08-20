@@ -1,0 +1,77 @@
+
+
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usefonttheme{structuresmallcapsserif}
+
+
+%Information to be included in the title page:
+\title{Eigenvalues and Eigenvectors}
+\author{A.K.Lal}
+\institute{IIT Kanpur}
+\date{2017}
+\begin{document}
+\maketitle
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+\section{introduction}
+\subsection{Characterstic Polynomial and Equation
+}
+ 
+\begin{frame}
+\frametitle{Introduction}
+\begin{definition}[Characteristic Polynomial, Characteristic Equation]
+Let $A$ be a square matrix of order n. The polynomial $ \det (A - \lambda*I)$ is called the characteristic polynomial of $A$ and is denoted by $p_A(\lambda)$ (in short, $p(\lambda)$, if the matrix $A$ is clear from the context). The equation $p(\lambda) = 0$ is called the characteristic equation of $A$. If $\lambda \in \mathbb{F}$ is a solution of the characteristic equation $p(\lambda) = 0$, then $\lambda$ is called a characteristic value of $A$. 
+
+\end{definition}
+\begin{theorem}
+Let $A \in \mathbb{M}_n(\mathbb{F})$. Suppose $\lambda = \lambda_0 \in \mathbb{F}$ is a root of the characteristic equation. Then
+there exists a non-zero $v \in \mathbb{F}^n$ such that $Av = \lambda_0 v$.
+\end{theorem}
+\end{frame}
+\subsection{Eigenvalues and Eigenvectors}
+\begin{frame}
+\frametitle{Definition of Eigenvalues and Eigenvectors}
+\begin{definition}
+Let $A \in \mathbb{M}_n (\mathbb{F})$ and let the linear system $Ax = \lambda x$ has a non-zero solution $x \in \mathbb{F}^n$ for some $\lambda \in \mathbb{F}$. Then
+\begin{itemize}
+\item $\lambda \in \mathbb{F}$ is called an eigenvalue of $A$,
+\item $ x \in \mathbb{F}^n$ is called an eigenvector corresponding to the eigenvalue $\lambda$ of $A$, and
+\item the tuple $(\lambda, x)$ is called an eigen-pair.
+\end{itemize}
+\end{definition}
+\end{frame}
+\section{Cayley Hamilton Theorem}
+\begin{frame}
+\frametitle{Cayley Hamilton Theorem}
+\begin{theorem}
+Let $A$ be a square matrix of order $n$. Then $A$
+satisfies its characteristic equation. That is,
+$A^n + a_{n-1} A^{n-1} + a_{n-2} A^{n-2} + ..... +  a_1A + a_0I = 0$
+holds true as a matrix identity.
+\end{theorem}
+\end{frame}
+\section{Diagonalization}
+\subsection{Matrix Diagonalization}
+\begin{frame}
+\frametitle{Diagonalization}
+\begin{definition}[Matrix Diagonalization]
+A matrix $A$ is said to be diagonalizable if there exists
+a non-singular matrix $P$ such that $P^{-1} AP$ is a diagonal matrix.
+\end{definition}
+\subsection{Condition for diagonalization}
+\begin{theorem}[Condition for diagonalization]
+Let $A \in \mathbb{M}_n(\mathbb{R})$. Then A is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors
+\end{theorem}
+\end{frame}
+\end{document}
+
+\grid

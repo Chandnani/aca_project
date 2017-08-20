@@ -72,10 +72,12 @@ void Dijiktras(int s){
 
 int main()
 {
+	cout<<"Enter 3 inetgers n,m and q where n is no vertices in map, m is no of edges and q is no of queries."<<endl;
 	int n,m,q;
 	cin>>n>>m>>q;
 	string s[n];
 	int size =0;
+	cout<<"Enter m lines of  ai(string), bi(string) ,wi(integer) where each line denotes an edge between ai and bi of lenth wi"<<endl;
 	rep(i,m){
 		string a,b;
 		cin>>a>>b;
@@ -117,6 +119,7 @@ int main()
 	}
 
 	rep(i,q){
+		cout<<"Enter 2 strings to query shortest path between 2 locations "<<endl;
 		string sour,dest;
 		cin>>sour>>dest;
 		int c=-1,d=-1;

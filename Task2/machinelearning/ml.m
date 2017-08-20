@@ -19,8 +19,6 @@ if d==Y_test(i)
 	ans=ans+1;
 end
 end
-ans
 acc(k)= ans/10000 ;
 end
-acc
-plot(acc)
+plot(50*(1:40),acc),ylabel('accuracy'),xlabel('no of training examples'),title('accuracy vs iters')
